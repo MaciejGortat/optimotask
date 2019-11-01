@@ -1,8 +1,3 @@
-/*
-	< 583px 
-	583px - 900px 
-	> 900px
-*/
 html {
 	height: 100%;
 	width: 100%;
@@ -103,6 +98,7 @@ p {
 
 	 .rect3 {
 		background-color: blue;
+		height: 18em;
 	}
 }
 
