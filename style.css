@@ -73,13 +73,44 @@ p {
 }
 
 .oval {
-  height: 5em;
-  width: 5.5em;
-  background-color: teal;
-  border-radius: 50%;
-  position: relative;
-  left: 10em;
-  top: -1.7em;
+	height: 5em;
+	width: 5.5em;
+	background-color: teal;
+	border-radius: 50%;
+	position: relative;
+	left: 10em;
+	top: -1.7em;
+}
+
+@-webkit-keyframes item-b-slide {
+
+	from {
+		position: absolute;
+		top: 24em;
+		left: 0em;
+	}
+
+	50% {
+		position: absolute;
+		top: 24em;
+		right: 20em;
+	}
+
+	to {
+		position: absolute;
+		top: 8em;
+		left: 24em;
+	}
+}
+
+@-webkit-keyframes rotation {
+
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
 }
 
 @media screen and (max-width: 583px) {
@@ -96,7 +127,7 @@ p {
 		position: absolute;
 	}
 
-	 .rect3 {
+	.rect3 {
 		background-color: blue;
 		height: 18em;
 	}
@@ -128,14 +159,24 @@ p {
 
 @media screen and (min-width: 901px) {
 
+	.diamond1 {
+		-webkit-animation: rotation 2s infinite linear;
+	}
+
+	.diamond2 {
+		-webkit-animation: rotation 2s infinite linear reverse;
+	}
+
 	p {
 		margin-top: 0.5em;
 	}
 
 	.item-b {
+		-webkit-animation-duration: 2s;
+		-webkit-animation-name: item-b-slide;
 		position: absolute;
 		top: 8em;
-		right: 27em;
+		left: 24em;
 	}
 
 	.item-c {
