@@ -15,6 +15,12 @@ body {
 	padding: 0;
 }
 
+p {
+	text-align: center;
+	font-size: 2em;
+	font-family: "Verdana";
+}
+
 .container {
 	background-color: green;
 }
@@ -66,6 +72,11 @@ body {
 	top: 3em;
 }
 
+.rect3 {
+	width: 10em;
+	height: 26em;
+}
+
 .oval {
   height: 5em;
   width: 5.5em;
@@ -79,27 +90,66 @@ body {
 @media screen and (max-width: 583px) {
 
 	.item-b {
-		position: relative;
-		top: 7em;
+		position: absolute;
+		top: 24em;
 		left: 0em;
+	}
+
+	.item-c {
+		left: 4.2em;
+		top: 30.5em;
+		position: absolute;
+	}
+
+	 .rect3 {
+		background-color: blue;
 	}
 }
 
 @media screen and (min-width: 584px) and (max-width: 900px) {
+	
+	p {
+		margin-top: 0.5em;
+	}
 
 	.item-b {
-		position: relative;
-		top: 7em;
+		position: absolute;
+		top: 24em;
 		left: 0em;
 	}
+
+	.item-c {
+		right: 1em;
+		top: 5em;
+		position: absolute;
+	}
+
+	.rect3 {
+		background-color: firebrick;
+	}
+	
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
+
+	p {
+		margin-top: 0.5em;
+	}
 
 	.item-b {
 		position: absolute;
 		top: 8em;
-		left: 30em;
+		right: 27em;
+	}
+
+	.item-c {
+		right: 1em;
+		top: 5em;
+		position: absolute;
+	}
+	
+	.rect3 {
+		background-color: white;
 	}
 }
 
